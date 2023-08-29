@@ -1,0 +1,175 @@
+.body {
+    background-color: #F6E5F9;
+    
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    color: black;
+
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center; 
+}
+
+.perfil__container {
+    padding: 0 1rem;
+    
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #CEAFFF;
+    border-width: 2px;
+
+    width: 200px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+
+    border-radius: 60px;
+    
+    font-size: 18px;
+}
+
+a{
+    text-decoration:none;
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+    transition: color 1s;
+}
+
+a:hover{
+    color:white;
+    background-color: #9f8be8;
+}
+
+
+
+.card {
+    
+    border-radius: 1rem;
+    box-shadow:  0 0 0.125rem 0.125rem white;
+    overflow: hidden;
+    max-width: 320px;
+    transition: box-shadow 0.25s;
+
+}
+.card:hover {
+    box-shadow: 0 0 0.125rem 0.125rem  #9f8be8;
+}
+.card__header,
+.card__footer  {
+    background-color: rgba(232, 234, 241, 0.623);
+    padding: 1rem;
+
+}
+
+.card__header-img-container {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(232, 234, 241, 0.623);
+    margin: auto;
+
+}
+
+.card__header-img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card__body {
+    background-color: rgba(232, 234, 241, 0.623);
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    padding: 1rem;
+
+}
+
+.card__body-title,
+.card__body-keywords,
+.card__body-presentation
+ {
+    text-align: center;
+    margin: 0;
+
+}
+
+.card__body-title {
+    font-size: 1.125rem;
+}
+.card__body-keywords{
+    font-size: 1.125rem;
+
+}
+
+.card__body-presentation{
+    font-size: 0.875rem;
+}
+
+.card__footer {
+
+    justify-items: center;
+
+}
+.card__footer-nav-list {
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.card__footer-nav-item {
+    display: flex;
+    
+    align-items: center;
+}
+
+.card__footer-nav-link {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0,25s;
+}
+
+.card__footer-nav-link:hover {
+    transform: scale(1.25);
+    
+}
+
+
+
+
+
+@media (min-width:854px) {
+    .card {
+    max-width: 512px;
+    }
+    
+    .card__body {
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .card__body-title {
+        font-size: 1.5rem;
+    }
+    .card__body-keywords {
+        font-size: 1.25rem;
+
+    }
+    .card__body-presentation {
+        font-size: 1rem;
+    }
+}
